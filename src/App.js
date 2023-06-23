@@ -1,7 +1,9 @@
+import Header from "./Header/Header";
+
 import "./App.css";
 
 function App() {
-  return <h1>Hi Kira!</h1>;
+  return <Header />;
 }
 
 export default App;
