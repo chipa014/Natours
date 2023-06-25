@@ -1,6 +1,6 @@
-import styles from "./Heading.module.css";
+import styles from "./TextBox.module.css";
 
-const Heading = function (props) {
+const TextBox = function (props) {
   return (
     <div className={styles["text-box"]}>
       <h1 className={styles["heading-primary"]}>
@@ -15,4 +15,4 @@ const Heading = function (props) {
   );
 };
 
-export default Heading;
+export default TextBox;
