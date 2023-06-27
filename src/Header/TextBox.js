@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 import styles from "./TextBox.module.css";
 
 const TextBox = function (props) {
@@ -10,6 +12,7 @@ const TextBox = function (props) {
         <span className={styles["heading-primary-sub"]}>
           {props.headingSub}
         </span>
+        <Button className="btn-white btn-animated">Discover our tours</Button>
       </h1>
     </div>
   );
