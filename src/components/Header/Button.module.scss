@@ -1,24 +1,26 @@
+@use "../../styles/colors.scss" as color;
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  margin-top: 60px;
+  margin-top: 6rem;
   font-size: 50%;
-  border-radius: 500px;
+  border-radius: 50rem;
   transition: all 0.3s;
   position: relative;
 }
 
 .btn:hover {
-  transform: translate(0, -3px);
-  box-shadow: 0 10px 20px var(--shadow-color);
+  transform: translate(0, -0.3rem);
+  box-shadow: 0 1rem 2rem color.$shadow;
 }
 
 .btn:active {
-  transform: translate(0, -1px);
-  box-shadow: 0 5px 10px var(--shadow-color);
+  transform: translate(0, -0.1rem);
+  box-shadow: 0 0.5rem 1rem color.$shadow;
 }
 
 .btn::after {
@@ -26,7 +28,7 @@
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 500px;
+  border-radius: 50rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -39,16 +41,17 @@
   opacity: 0;
 }
 
-.btn-white {
-  background-color: var(--white);
-  color: var(--text-color);
+.btn--white {
+  /* background-color: var(--white); */
+  background-color: color.$white;
+  color: color.$text-dark;
 }
 
-.btn-white::after {
-  background-color: var(--white);
+.btn--white::after {
+  background-color: color.$white;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
@@ -56,7 +59,7 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   100% {

@@ -1,0 +1,27 @@
+@use "./styles/colors.scss" as color;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // color: var(--text-color);
+  color: color.$text-dark;
+
+  padding: 3rem;
+  box-sizing: border-box;
+}
