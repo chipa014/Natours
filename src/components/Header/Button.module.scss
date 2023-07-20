@@ -1,5 +1,5 @@
-@use "../../styles/colors.scss" as color;
-
+@import "../../abstract/variables/colors";
+@import "../../base/animations";
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -15,12 +15,12 @@
 
 .btn:hover {
   transform: translate(0, -0.3rem);
-  box-shadow: 0 1rem 2rem color.$shadow;
+  box-shadow: 0 1rem 2rem $color-shadow;
 }
 
 .btn:active {
   transform: translate(0, -0.1rem);
-  box-shadow: 0 0.5rem 1rem color.$shadow;
+  box-shadow: 0 0.5rem 1rem $color-shadow;
 }
 
 .btn::after {
@@ -43,27 +43,15 @@
 
 .btn--white {
   /* background-color: var(--white); */
-  background-color: color.$white;
-  color: color.$text-dark;
+  background-color: $color-white;
+  color: $color-text-dark;
 }
 
 .btn--white::after {
-  background-color: color.$white;
+  background-color: $color-white;
 }
 
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

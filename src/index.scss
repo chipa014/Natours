@@ -1,4 +1,11 @@
-@use "./styles/colors.scss" as color;
+// @use "./abstract/colors" as color;
+@import "./abstract/variables/colors";
+
+@import "./base/animations";
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./pages/home";
 
 *,
 *::before,
@@ -9,19 +16,11 @@
 }
 
 html {
+  // 1rem definition
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  // color: var(--text-color);
-  color: color.$text-dark;
-
   padding: 3rem;
   box-sizing: border-box;
 }

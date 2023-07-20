@@ -1,0 +1,13 @@
+@import "../../abstract/variables/grid";
+@import "../../abstract/mixins";
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  @include clearfix;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+}
