@@ -2,7 +2,7 @@ import styles from "./Button.module.scss";
 
 const Button = function (props) {
   const inheritedStyles = props.className
-    .split(" ")
+    ?.split(" ")
     .map((style) => styles[style])
     .reduce((style, str) => `${str} ${style}`, "");
   return (

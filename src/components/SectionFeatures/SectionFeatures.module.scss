@@ -1,18 +1,20 @@
-@import "../abstract/variables/colors";
+@import "../../abstract/variables/colors";
 
-.header {
+.section-features {
+  padding: 20rem 0;
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url("../img/hero.jpg");
+    url("../../resources/img/nat-4.jpg");
   background-size: cover;
   background-position: top;
 
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  transform: skewY(-5deg) translateY(-10rem);
 
-  /* Needed for absolute positioning of child elements */
-  position: relative;
+  & > * {
+    transform: skewY(5deg);
+  }
 }
