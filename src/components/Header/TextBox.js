@@ -2,6 +2,7 @@ import Button from "../UI/Button";
 import HeadingPrimary from "../UI/Headings/HeadingPrimary";
 
 import styles from "./TextBox.module.scss";
+import "../../base/_utilities.scss";
 
 const TextBox = function (props) {
   return (
@@ -10,7 +11,9 @@ const TextBox = function (props) {
         headingMain={props.headingMain}
         headingSub={props.headingSub}
       />
-      <Button className="btn--white btn--animated">{props.btnText}</Button>
+      <div className="u-margin-top-btn">
+        <Button className="btn--white btn--animated">{props.btnText}</Button>
+      </div>
     </div>
   );
 };

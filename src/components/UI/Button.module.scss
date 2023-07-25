@@ -7,7 +7,6 @@
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  margin-top: 6rem;
   font-size: $default-font-size;
   border-radius: 50rem;
   transition: all 0.3s;
@@ -23,7 +22,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translate(0, -0.1rem);
     box-shadow: 0 0.5rem 1rem $color-shadow;
   }
