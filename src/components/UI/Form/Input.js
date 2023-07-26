@@ -16,7 +16,7 @@ const Input = function (props) {
         {props.children}
       </input>
       <label
-        for={props.id}
+        htmlFor={props.id}
         className={isRadio ? styles["radio-label"] : styles.label}
       >
         {isRadio && <span className={styles["radio-button"]}></span>}

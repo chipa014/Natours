@@ -1,7 +1,7 @@
-import styles from "./NavItem.module.scss";
+import styles from "./FooterNavItem.module.scss";
 import linkStyles from "./FooterLink.module.scss";
 
-const NavItem = function (props) {
+const FooterNavItem = function (props) {
   return (
     <li className={styles.item}>
       <a href="#" className={linkStyles.link}>
@@ -11,4 +11,4 @@ const NavItem = function (props) {
   );
 };
 
-export default NavItem;
+export default FooterNavItem;

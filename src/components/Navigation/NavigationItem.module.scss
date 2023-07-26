@@ -1,0 +1,38 @@
+@import "../../abstract/variables/colors";
+
+.item {
+  margin: 1rem;
+}
+
+.link {
+  &:link,
+  &:visited {
+    font-size: 3rem;
+    font-weight: 300;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      $color-white 50%
+    );
+    background-size: 230%;
+    transition: all 0.4s;
+    display: inline-block;
+  }
+
+  &:hover,
+  &:active {
+    background-position: 100%;
+    color: $color-primary-medium;
+    transform: translateX(1rem);
+  }
+
+  span {
+    margin-right: 1.5rem;
+    display: inline-block;
+  }
+}

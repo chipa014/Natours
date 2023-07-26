@@ -1,6 +1,6 @@
 import Col from "../../layout/Grid/Col";
 import FooterLink from "./FooterLink";
-import Nav from "./Nav";
+import FooterNav from "./FooterNav";
 import Paragraph from "../UI/Paragraph";
 import Row from "../../layout/Grid/Row";
 
@@ -25,7 +25,7 @@ const Footer = function () {
       </div>
       <Row>
         <Col gridWidth="col-1-of-2">
-          <Nav items={navItems} />
+          <FooterNav items={navItems} />
         </Col>
         <Col gridWidth="col-1-of-2">
           <div className={styles.copyright}>

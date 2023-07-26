@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Navigation from "./components/Navigation/Navigation";
 import SectionAbout from "./components/SectionAbout/SectionAbout";
 import SectionBooking from "./components/SectionBooking/SectionBooking";
 import SectionFeatures from "./components/SectionFeatures/SectionFeatures";
@@ -10,6 +11,7 @@ import SectionTours from "./components/SectionTours/SectionTours";
 function App() {
   return (
     <Fragment>
+      <Navigation />
       <Header />
       <main>
         <SectionAbout />
