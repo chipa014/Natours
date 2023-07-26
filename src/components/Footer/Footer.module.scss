@@ -1,0 +1,25 @@
+@import "../../abstract/variables/colors";
+
+.footer {
+  background-color: $color-gray-dark-2;
+  padding: 10rem;
+  font-size: 1.4rem;
+  color: $color-gray-light-1;
+}
+
+.logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.logo {
+  width: 15rem;
+  height: auto;
+}
+
+.copyright {
+  border-top: 1px solid $color-gray-dark-1;
+  padding-top: 2rem;
+  width: 80%;
+  float: right;
+}
