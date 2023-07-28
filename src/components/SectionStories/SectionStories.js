@@ -12,7 +12,7 @@ import videoSourceWebm from "../../resources/img/video.webm";
 
 const SectionStories = function () {
   return (
-    <section className={styles["section-stories"]}>
+    <section className={styles["section-stories"]} id="section-stories">
       <Video>
         <source src={videoSourceMp4} type="video/mp4" />
         <source src={videoSourceWebm} type="video/webm" />

@@ -1,4 +1,3 @@
-import Button from "../UI/Button";
 import Input from "../UI/Form/Input";
 import InputGroup from "../UI/Form/InputGroup";
 import HeadingSecondary from "../UI/Headings/HeadingSecondary";
@@ -10,7 +9,7 @@ import "../../base/_utilities.scss";
 
 const SectionBooking = function () {
   return (
-    <section className={styles["section-booking"]}>
+    <section className={styles["section-booking"]} id="section-booking">
       <Row>
         <div className={styles.book}>
           <div className={styles["book__form"]}>

@@ -6,7 +6,7 @@ import styles from "./SectionFeatures.module.scss";
 
 const SectionFeatures = function () {
   return (
-    <section className={styles["section-features"]}>
+    <section className={styles["section-features"]} id="section-features">
       <Row>
         <Col gridWidth="col-1-of-4">
           <FeatureBox

@@ -12,7 +12,7 @@ import styles from "./SectionAbout.module.scss";
 
 const SectionAbout = function () {
   return (
-    <section className={styles["section-about"]}>
+    <section className={styles["section-about"]} id="section-about">
       <div className="u-center-text u-margin-bottom-big">
         <HeadingSecondary>
           Exciting tours for adventurous people

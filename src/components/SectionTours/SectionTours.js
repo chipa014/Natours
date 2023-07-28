@@ -9,7 +9,7 @@ import "../../base/_utilities.scss";
 
 const SectionTours = function () {
   return (
-    <section className={styles["section-tours"]}>
+    <section className={styles["section-tours"]} id="section-tours">
       <div className="u-center-text u-margin-bottom-big">
         <HeadingSecondary>Most Popular Tours</HeadingSecondary>
       </div>

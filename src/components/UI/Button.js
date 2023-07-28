@@ -7,7 +7,7 @@ const Button = function (props) {
     .reduce((style, str) => `${str} ${style}`, "");
   return (
     <a
-      href="#"
+      href={props.href ?? "#"}
       onClick={props.onClick}
       className={`${styles.btn} ${inheritedStyles}`}
     >

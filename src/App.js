@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
+import Popup from "./components/Popup/Popup";
 import SectionAbout from "./components/SectionAbout/SectionAbout";
 import SectionBooking from "./components/SectionBooking/SectionBooking";
 import SectionFeatures from "./components/SectionFeatures/SectionFeatures";
@@ -21,6 +22,7 @@ function App() {
         <SectionBooking />
       </main>
       <Footer />
+      <Popup />
     </Fragment>
   );
 }

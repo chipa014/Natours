@@ -13,12 +13,16 @@ const Navigation = function () {
     });
   }, []);
 
+  const navItemClickHandler = function (event) {
+    setChecked(false);
+  };
+
   const navItems = [
-    "About Natours",
-    "Your benefits",
-    "Popular tours",
-    "Stories",
-    "Book now",
+    { displayTitle: "About Natours", id: "section-about" },
+    { displayTitle: "Your benefits", id: "section-features" },
+    { displayTitle: "Popular tours", id: "section-tours" },
+    { displayTitle: "Stories", id: "section-stories" },
+    { displayTitle: "Book now", id: "section-booking" },
   ];
 
   const onChangeHandler = function (event) {
@@ -39,7 +43,7 @@ const Navigation = function () {
       </label>
       <div className={styles.background}>&nbsp;</div>
       <nav className={styles.nav}>
-        <NavigationList items={navItems} />
+        <NavigationList items={navItems} onItemClick={navItemClickHandler} />
       </nav>
     </div>
   );
