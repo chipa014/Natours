@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import styles from "./Input.module.scss";
 
 const Input = function (props) {
