@@ -1,3 +1,4 @@
+@import "./abstract/variables/colors";
 @import "./abstract/mixins.scss";
 
 // @import "./base/animations";
@@ -34,4 +35,9 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
+}
+
+::selection {
+  background-color: $color-primary-medium;
+  color: $color-white;
 }

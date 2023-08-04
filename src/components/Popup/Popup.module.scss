@@ -16,6 +16,13 @@
 
   transition: all 0.3s;
 
+  @supports (backdrop-filter: blur(10px)) or
+    (-webkit-backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: $color-shadow;
+  }
+
   &:target {
     opacity: 1;
     visibility: visible;
