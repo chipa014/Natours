@@ -1,3 +1,4 @@
+@import "../../../abstract/mixins.scss";
 @import "../../../abstract/variables/colors";
 @import "../../../abstract/variables/misc";
 
@@ -15,6 +16,10 @@
   display: block;
 
   transition: all 0.4s;
+
+  @include respond(tab-port) {
+    width: 90%;
+  }
 
   &:focus {
     outline: none;
@@ -49,6 +54,11 @@
 .radio-group {
   width: 50%;
   display: inline-block;
+
+  @include respond(tab-port) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .radio-label {

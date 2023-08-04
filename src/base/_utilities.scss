@@ -1,3 +1,5 @@
+@import "../abstract/mixins.scss";
+
 .u-center-text {
   text-align: center;
 }
@@ -12,8 +14,15 @@
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
+  @include respond(tab-port) {
+    margin-bottom: 3rem;
+  }
 }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem;
+  }
 }

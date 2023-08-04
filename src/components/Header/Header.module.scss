@@ -1,3 +1,4 @@
+@import "../../abstract/mixins.scss";
 @import "../../abstract/variables/colors";
 
 .header {
@@ -12,6 +13,14 @@
   background-position: top;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond(tab-land) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 89vh, 0 100%);
+  }
 
   /* Needed for absolute positioning of child elements */
   position: relative;

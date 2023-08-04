@@ -1,8 +1,8 @@
+@import "../../abstract/mixins.scss";
 @import "../../abstract/variables/colors";
 
 .section-features {
   padding: 20rem 0;
-  height: 95vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -16,5 +16,9 @@
 
   & > * {
     transform: skewY(5deg);
+  }
+
+  @include respond(tab-port) {
+    padding: 15rem 0 5rem 0;
   }
 }

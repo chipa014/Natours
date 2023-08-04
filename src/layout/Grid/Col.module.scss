@@ -1,3 +1,5 @@
+@import "../../abstract/mixins.scss";
+
 @import "../../abstract/variables/colors";
 @import "../../abstract/variables/grid";
 
@@ -7,6 +9,12 @@
 
   &:not(:last-child) {
     margin-right: $gutter-horizontal;
+  }
+
+  @include respond(tab-port) {
+    width: 100% !important;
+    margin-right: 0;
+    margin-bottom: $gutter-vertical-small;
   }
 }
 

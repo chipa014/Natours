@@ -1,3 +1,4 @@
+@import "../../abstract/mixins.scss";
 @import "../../abstract/variables/colors";
 
 .footer {
@@ -5,11 +6,19 @@
   padding: 10rem;
   font-size: 1.4rem;
   color: $color-gray-light-1;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
 }
 
 .logo-box {
   text-align: center;
   margin-bottom: 8rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 6rem;
+  }
 }
 
 .logo {
@@ -22,4 +31,11 @@
   padding-top: 2rem;
   width: 80%;
   float: right;
+
+  @include respond(tab-port) {
+    width: 100;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
 }
