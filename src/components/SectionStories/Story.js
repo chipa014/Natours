@@ -9,9 +9,13 @@ const Story = function (props) {
     <div className={styles.story}>
       <figure className={styles.story__shape}>
         <img
+          srcSet={`${require(`../../resources/img/${props.imgSrcSmall}`)} 300w,
+          ${require(`../../resources/img/${props.imgSrc}`)} 1000w,
+          ${require(`../../resources/img/${props.imgSrcLarge}`)} 2000w`}
+          size="(max-width: 56.25px) 20vw, (max-width: 37.5px) 40vw, 380px"
           className={styles.story__image}
-          src={require(`../../resources/img/${props.imgsrc}`)}
           alt="Person on a tour"
+          src={require(`../../resources/img/${props.imgSrcLarge}`)}
         />
         <figcaption className={styles.story__caption}>
           {props.author}

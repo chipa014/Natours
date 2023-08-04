@@ -26,7 +26,9 @@ const SectionStories = function () {
           heading="I had the best week ever with my family"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie a iaculis at erat pellentesque adipiscing commodo elit. Augue ut lectus arcu bibendum at varius vel pharetra vel. Est ante in nibh mauris."
           author="Mary Smith"
-          imgsrc="nat-8.jpg"
+          imgSrcSmall="nat-8-small.png"
+          imgSrc="nat-8.png"
+          imgSrcLarge="nat-8-large.jpg"
         />
       </Row>
       <Row>
@@ -34,7 +36,9 @@ const SectionStories = function () {
           heading="Wow! My life is completely different now"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie a iaculis at erat pellentesque adipiscing commodo elit. Augue ut lectus arcu bibendum at varius vel pharetra vel. Est ante in nibh mauris."
           author="Jack Wilson"
-          imgsrc="nat-9.jpg"
+          imgSrcSmall="nat-9-small.png"
+          imgSrc="nat-9.png"
+          imgSrcLarge="nat-9-large.jpg"
         />
       </Row>
       <div className="u-center-text">

@@ -17,11 +17,18 @@ const Footer = function () {
   return (
     <footer className={styles.footer}>
       <div className={styles["logo-box"]}>
-        <img
-          src={require("../../resources/img/logo-green-2x.png")}
-          alt="Natours logo"
-          className={styles.logo}
-        />
+        <picture className={styles.logo}>
+          <source
+            srcSet={`${require("../../resources/img/logo-green-small-1x.png")} 1x, ${require("../../resources/img/logo-green-small-2x.png")} 2x`}
+            media="(max-width: 37.5em)"
+            src={require("../../resources/img/logo-green-small-2x.png")}
+          />
+          <img
+            srcSet={`${require("../../resources/img/logo-green-1x.png")} 1x, ${require("../../resources/img/logo-green-2x.png")} 2x`}
+            alt="Natours logo"
+            src={require("../../resources/img/logo-green-2x.png")}
+          />
+        </picture>
       </div>
       <Row>
         <Col gridWidth="col-1-of-2">

@@ -12,14 +12,22 @@ const Popup = function () {
       <div className={styles.content}>
         <div className={styles.content__left}>
           <img
-            src={require("../../resources/img/nat-8.jpg")}
+            srcSet={`${require(`../../resources/img/nat-8-small.png`)} 300w,
+          ${require(`../../resources/img/nat-8.png`)} 1000w,
+          ${require(`../../resources/img/nat-8-large.jpg`)} 2000w`}
+            size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 40vw, 380px"
             alt="Person on a tour"
             className={styles.img}
+            src={require("../../resources/img/nat-8-large.jpg")}
           />
           <img
-            src={require("../../resources/img/nat-9.jpg")}
+            srcSet={`${require(`../../resources/img/nat-9-small.png`)} 300w,
+          ${require(`../../resources/img/nat-9.png`)} 1000w,
+          ${require(`../../resources/img/nat-9-large.jpg`)} 2000w`}
+            size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 40vw, 380px"
             alt="Person on a tour"
             className={styles.img}
+            src={require("../../resources/img/nat-9-large.jpg")}
           />
         </div>
         <div className={styles.content__right}>

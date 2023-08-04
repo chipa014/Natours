@@ -1,6 +1,7 @@
 import Col from "../../layout/Grid/Col";
 import Row from "../../layout/Grid/Row";
 
+import Composition from "./Composition";
 import HeadingSecondary from "../UI/Headings/HeadingSecondary";
 import HeadingTertiary from "../UI/Headings/HeadingTertiary";
 import Paragraph from "../UI/Paragraph";
@@ -42,23 +43,7 @@ const SectionAbout = function () {
           <ButtonSmall>Learn more &rarr;</ButtonSmall>
         </Col>
         <Col gridWidth="col-1-of-2">
-          <div className={styles.composition}>
-            <img
-              src={require("../../resources/img/nat-1-large.jpg")}
-              alt="A serene lake in the forest, mountains in the distance"
-              className={`${styles["composition__photo"]} ${styles["composition__photo--p1"]}`}
-            />
-            <img
-              src={require("../../resources/img/nat-2-large.jpg")}
-              alt="Person biking along a beautiful hill landscape"
-              className={`${styles["composition__photo"]} ${styles["composition__photo--p2"]}`}
-            />
-            <img
-              src={require("../../resources/img/nat-3-large.jpg")}
-              alt="Person on a mountain trail"
-              className={`${styles["composition__photo"]} ${styles["composition__photo--p3"]}`}
-            />
-          </div>
+          <Composition />
         </Col>
       </Row>
     </section>
