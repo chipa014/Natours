@@ -5,8 +5,11 @@ import styles from "./Header.module.scss";
 
 const Header = function () {
   return (
-    <header className={styles.header}>
-      <Logo url={require("../../resources/img/logo-white.png")} alt="Natours logo" />
+    <header className={styles.header} id="header">
+      <Logo
+        url={require("../../resources/img/logo-white.png")}
+        alt="Natours logo"
+      />
       <TextBox
         headingMain="Outdoors"
         headingSub="is where life happens"
